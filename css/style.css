@@ -18,6 +18,9 @@ header{
     background-color: #1abc9c;
 }
 
+.p-10 {
+    padding: 10px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -68,8 +71,38 @@ header{
 
 #portfolio img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
-    margin-bottom: 25px;
+}
+
+.ms_card {
+    position: relative;
+}
+  
+
+.ms_layover {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(26, 188, 156, 0.63);
+    display: none;
+}
+  
+.ms_layover i {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolio .ms_card:hover .ms_layover {
+    display: block;
+    cursor: pointer;
 }
 
 
